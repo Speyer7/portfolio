@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/about_me.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css?wpfas=true" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Jonas</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about_me.html" class="active">Über mich</a>
+            <a href="current_project.html">Momentanes Projekt</a>
+            <a href="projects.html">Projekte</a>
+            <a href="ideas.html">Ideen</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+
+        <span onclick="openNav()" class="NavBtn"><i class='bx bx-menu'></i></span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about_me.html">Über mich</a>
+            <a href="current_project.html">Momentanes Projekt</a>
+            <a href="projects.html">Projekte</a>
+            <a href="ideas.html">Ideen</a>
+            <a href="contact.html">Kontakt</a>
+        </div>
+
+        <script>
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            }
+    
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+          
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Mein Name ist Jonas</h1>
+            <h3>Hobbymäßiger Softwareentwickler</h3>
+            <p>..., ein passionierter Softwareentwickler mit Leidenschaft für innovative Lösungen.
+                In meiner Freizeit entwickle ich gerne neue Ideen und Projekte, um meine 
+                Fähigkeiten zu verbessern und meine Kreativität auszuleben. Mit meiner Expertise 
+                in [mention specific programming languages or technologies] helfe ich anderen, ihre 
+                Visionen in die Tat umzusetzen und ihre Geschäfte voranzutreiben. Auf dieser Seite 
+                teile ich meine Erfahrungen, meine Projekte und meine Gedanken zum Thema 
+                Softwareentwicklung.
+            </p>
+        
+        </div>
+
+        
+    </section>
+
+    
+
+</body>
+</html>

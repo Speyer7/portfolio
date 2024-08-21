@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #081b29;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #081b29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.5s;
+}
+
+.logo:hover {
+    color: #00abfa;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: color 0.5s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abfa;
+}
+
+.home {
+    margin-top: 0; /* Remove this line */
+    display: flex;
+    align-items: center;
+    padding: 100px 10% !important;
+    justify-content: center;
+}
+
+.home-content {
+    max-width: 750px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin-top: 800px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.5;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: -5;
+    color: #ededed;
+}
+
+
+.home-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #00abfa;
+    margin-left: 75px;
+    transition: 0.5s;
+    z-index: -5;
+    max-width: 500px;
+}
+
+
+.backBtn {
+    font-size: 70px;
+    color: white;
+    transition: 0.5s;
+}
+
+.backBtn:hover {
+    color: #00abfa;
+}
+
+
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content a {
+    text-decoration: none;
+    z-index: -1;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: #ccc;
+}
+
+.sidebar-open h1, .sidebar-open h3, .sidebar-open span {
+    display: none;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #00abfa; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ededed;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #081b29;
+    font-size: 30px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidenav .closebtn:hover {
+    color: #081b29;
+    font-size: 45px;
+}
+
+.NavBtn {
+    display: none;
+}
+
+/* Handyfreundliche Anpassungen */
+@media (max-width: 768px) {
+    * {
+        margin: 0;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+
+    }
+
+    .home-content {
+        margin-right: 20px !important;
+        margin-left: 0px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .home-content h1 {
+        font-size: 35px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+
+    .header .navbar a {
+        justify-content: safe;
+    }
+
+    .NavBtn {
+        display: block;
+        font-size: 30px;
+        transition: 0.5s;
+    }
+
+    .NavBtn:hover {
+        color: #00abfa;
+        cursor: pointer;
+    }
+
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css?wpfas=true" rel="stylesheet">
 </head>
@@ -14,39 +14,39 @@
 
         <nav class="navbar">
             <a href="#" class="active">Home</a>
-            <a href="#">Über mich</a>
-            <a href="#">Momentanes Projekt</a>
-            <a href="#">Projekte</a>
-            <a href="#">Ideen</a>
-            <a href="#">Kontakt</a>
+            <a href="about_me.html">Über mich</a>
+            <a href="current_project.html">Momentanes Projekt</a>
+            <a href="projects.html">Projekte</a>
+            <a href="ideas.html">Ideen</a>
+            <a href="contact.html">Kontakt</a>
         </nav>
 
         <span onclick="openNav()" class="NavBtn"><i class='bx bx-menu'></i></span>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#" class="active">Home</a>
-            <a href="#">Über mich</a>
-            <a href="#">Momentanes Projekt</a>
-            <a href="#">Projekte</a>
-            <a href="#">Ideen</a>
-            <a href="#">Kontakt</a>
+            <a href="#">Home</a>
+            <a href="about_me.html">Über mich</a>
+            <a href="current_project.html">Momentanes Projekt</a>
+            <a href="projects.html">Projekte</a>
+            <a href="ideas.html">Ideen</a>
+            <a href="contact.html">Kontakt</a>
         </div>
 
         <script>
             /* Set the width of the side navigation to 250px */
             function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("mySidenav").style.width = "250px";
             }
     
             /* Set the width of the side navigation to 0 */
             function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("mySidenav").style.width = "0";
             }
         </script>
           
     </header>
 
-    <script src="logic.js"></script>
+    <script src="js/logic.js"></script>
 
     <section class="home">
         <div class="home-content">
@@ -61,15 +61,15 @@
                 Softwareentwicklung.
             </p>
             <div class="btn-box">
-                <a href="#">Hire Me</a>
-                <a href="#">Schreib mir</a>
+                <a href="about_me.html">Über mich</a>
+                <a href="contact.html">Schreib mir</a>
             </div>
         </div>
 
         <div class="home-sci">
-            <a href="#" class="icon-git"><i class="fab fa-github"></i></a>
-            <a href="#" class="icon-twitter"><i class="bx bxl-twitter"></i></a>
-            <a href="#" class="icon-linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/Speyer7" class="icon-git"><i class="fab fa-github"></i></a>
+            <a href="#" class="icon-twitter" style="display: none;"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="icon-linkedin" style="display: none;"><i class="bx bxl-linkedin"></i></a>
         </div>
 
         <div class="image-icon">

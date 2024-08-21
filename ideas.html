@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/ideas.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css?wpfas=true" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Jonas</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about_me.html">Über mich</a>
+            <a href="current_project.html">Momentanes Projekt</a>
+            <a href="projects.html">Projekte</a>
+            <a href="ideas.html" class="active">Ideen</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+
+        <span onclick="openNav()" class="NavBtn"><i class='bx bx-menu'></i></span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about_me.html">Über mich</a>
+            <a href="current_project.html">Momentanes Projekt</a>
+            <a href="projects.html">Projekte</a>
+            <a href="ideas.html">Ideen</a>
+            <a href="contact.html">Kontakt</a>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.body.classList.add("sidebar-open");
+                const links = document.querySelectorAll("a");
+                links.forEach(link => {
+                    if (link.querySelector("h1") || link.querySelector("h3")) {
+                        link.classList.add("disabled");
+                    }
+                });
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.body.classList.remove("sidebar-open");
+                const links = document.querySelectorAll("a");
+                links.forEach(link => {
+                    if (link.querySelector("h1") || link.querySelector("h3")) {
+                        link.classList.remove("disabled");
+                    }
+                });
+            }
+        </script>
+          
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+           
+            <h1><i class='bx bx-code-curly'></i> Micro-Industrie</h1>
+            <h3>Mit einem RPI, Motoren und anderen Sensoren etc. eine kleine Produktionsanlage bauen die irgendwas herstellt</h3>
+  
+        </div>
+
+        
+    </section>
+
+    
+
+</body>
+</html>

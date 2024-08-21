@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/projects.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css?wpfas=true" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Jonas</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about_me.html">Über mich</a>
+            <a href="current_project.html">Momentanes Projekt</a>
+            <a href="projects.html" class="active">Projekte</a>
+            <a href="ideas.html">Ideen</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+
+        <span onclick="openNav()" class="NavBtn"><i class='bx bx-menu'></i></span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about_me.html">Über mich</a>
+            <a href="current_project.html">Momentanes Projekt</a>
+            <a href="projects.html">Projekte</a>
+            <a href="ideas.html">Ideen</a>
+            <a href="contact.html">Kontakt</a>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.body.classList.add("sidebar-open");
+                const links = document.querySelectorAll("a");
+                links.forEach(link => {
+                    if (link.querySelector("h1") || link.querySelector("h3")) {
+                        link.classList.add("disabled");
+                    }
+                });
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.body.classList.remove("sidebar-open");
+                const links = document.querySelectorAll("a");
+                links.forEach(link => {
+                    if (link.querySelector("h1") || link.querySelector("h3")) {
+                        link.classList.remove("disabled");
+                    }
+                });
+            }
+        </script>
+          
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+                
+    
+            <a href="projects/remote_car.html">
+                <h1><i class='bx bx-code-curly'></i> Roboter-Auto</h1>
+                <h3>Ein fernsteuerbares Roboter-Auto mit Sensoren! Wie cool ist das denn?</h3>
+            </a>
+            <a href="projects/finanzenprogramm.html">
+                <h1><i class='bx bx-wallet'></i> Finanzenprogramm</h1>
+                <h3>Du willst den Überblick über deine Finanzen? Dann ist dieses Projekt das Richtige für dich!</h3>
+            </a>
+            <a href="projects/chat_app.html">
+                <h1><i class='bx bx-chat'></i> ChatApp</h1>
+                <h3>Live Chat Messenger gefällig? Eigenes WhatsApp? Dann klick hier drauf!</h3>
+            </a>
+            <a href="projects/pixel_adventure.html">
+                <h1><i class='bx bx-heart'></i> Pixel Adventure</h1>
+                <h3>Ein wenig Action kann auch nicht schaden, also schnapp dir dieses tolle 2D Handy-Game!</h3>
+            </a>
+            <a href="projects/ai_assistent.html">
+                <h1><i class='bx bx-brain'></i> AI-Assistent</h1>
+                <h3>Du brauchst Unterstützung im Alltag? Jemanden der dir kleinere Fragen beantwortet oder sogar dein SmartHome steuert? Dann schau dir das hier doch mal an!</h3>
+            </a>
+        
+        </div>
+
+        
+    </section>
+
+    
+
+</body>
+</html>
