@@ -60,8 +60,9 @@ body {
     max-width: 750px;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    margin-top: 800px;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .home-content h1 {
